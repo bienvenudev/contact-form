@@ -70,7 +70,7 @@ h6 {
 }
 
 body {
-  /* font-family: 'Poppins-Regular', sans-serif; */
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -95,6 +95,8 @@ body {
 h1 {
   font-size: 40px;
   padding-bottom: 70px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .radio-wrapper {
@@ -110,9 +112,10 @@ h1 {
 }
 
 .form-wrapper {
+  width: 500px;
   background: linear-gradient(45deg, #56ab2f, #a8e063);
   border-radius: 10px;
-  padding: 50px;
+  padding: 72px 55px 65px 55px;
 }
 
 .form-input-wrapper {
@@ -129,11 +132,44 @@ h1 {
   font-size: 15px;
   color: #fff;
   line-height: 1.2;
-  padding: 0 5px;
+  padding: 12px 0;
   border: none;
 }
 
 .contact-form input,
 .contact-form textarea {
   font-size: 15px;
+}
+
+.contact-form textarea {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.button-wrapper {
+  padding-top: 23px;
+}
+
+.contact-form button {
+  /* font-family: Poppins-Medium; */
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 2px;
+  transition: all 0.4s;
+  border: none;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(-135deg, #56ab2f, #a8e063);
 }
