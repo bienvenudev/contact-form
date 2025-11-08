@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- background goes here -->
+    <div class="bg-img">
+      <div class="bg-overlay">
+        <div class="form-wrapper">
+          <form class="contact-form" action="">
+            <h1>Contact Us</h1>
+            <div class="radio-wrapper">
+              <div>
+                <input
+                  type="radio"
+                  name="choice"
+                  id="say-hi"
+                  value="say-hi"
+                  checked="checked"
+                />
+                <label for="say-hi">Say Hi</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="choice"
+                  id="get-quote"
+                  value="get-quote"
+                />
+                <label for="get-quote">Get a Quote</label>
+              </div>
+            </div>
+            <div>
+              <div class="form-input-wrapper">
+                <label for="name"></label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-input-wrapper">
+                <label for="email"></label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-input-wrapper show-quote">
+                <select name="service" id="service">
+                  <option value="needed-services">
+                    --- Needed Services ---
+                  </option>
+                  <option value="ecommerce-business">eCommerce Business</option>
+                  <option value="ui-design">UI/UX Design</option>
+                  <option value="online-services">Online Services</option>
+                </select>
+              </div>
+              <div class="show-quote form-input-wrapper">
+                <select name="service" id="service">
+                  <option value="needed-services">--- Budget ---</option>
+                  <option value="1500">$1500</option>
+                  <option value="2000">$2000</option>
+                  <option value="3000">$3000</option>
+                </select>
+              </div>
+              <div class="form-input-wrapper">
+                <textarea
+                  class="form-input"
+                  name="message"
+                  id="message"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
