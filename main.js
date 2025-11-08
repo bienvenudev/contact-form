@@ -6,7 +6,7 @@ sayHi.addEventListener("change", () => {
   if (sayHi.checked) {
     console.log("say hi checked!");
     quoteDropdowns.forEach((elem) => {
-      elem.style.display = "none";
+      elem.classList.remove("visible");
     });
   }
 });
@@ -15,7 +15,7 @@ getQuote.addEventListener("change", () => {
   if (getQuote.checked) {
     console.log("get quote checked!");
     quoteDropdowns.forEach((elem) => {
-      elem.style.display = "block";
+      setTimeout(() => elem.classList.add("visible"), 10);
     });
   }
 });
