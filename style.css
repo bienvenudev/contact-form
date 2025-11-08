@@ -107,7 +107,7 @@ h1 {
   padding-bottom: 38px;
 }
 
-.show-quote {
+.form-input-wrapper.show-quote {
   display: block;
   opacity: 0;
   max-height: 0;
@@ -116,7 +116,7 @@ h1 {
   transition: opacity 0.3s ease, max-height 0.3s ease, margin-bottom 0.3s ease;
 }
 
-.show-quote.visible {
+.form-input-wrapper.show-quote.visible {
   opacity: 1;
   max-height: 100px;
   margin-bottom: 27px;
@@ -132,6 +132,7 @@ h1 {
 .form-input-wrapper {
   width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 27px;
 }
 
 .form-input {
