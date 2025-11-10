@@ -1,0 +1,225 @@
+.bg-img {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.bg-overlay {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px; /* Account for navbar height */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.radio-wrapper {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  padding-bottom: 38px;
+}
+
+.radio-wrapper div {
+  display: flex;
+  align-items: center;
+}
+
+.radio-wrapper label {
+  cursor: pointer;
+  color: white;
+}
+
+.form-input-wrapper.show-quote {
+  display: block;
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.form-input-wrapper.show-quote.visible {
+  opacity: 1;
+  max-height: 100px;
+  margin-bottom: 27px;
+}
+
+.form-wrapper {
+  width: 500px;
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+  border-radius: 10px;
+  padding: 72px 55px 65px 55px;
+}
+
+.form-input-wrapper {
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 27px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  padding: 12px 0;
+  border: none;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form textarea {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  resize: vertical;
+}
+
+.button-wrapper {
+  padding-top: 23px;
+}
+
+.contact-form button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 2px;
+  transition: all 0.4s;
+  border: none;
+  cursor: pointer;
+  background: white;
+}
+
+.contact-form button:hover {
+  color: white;
+  background: linear-gradient(-135deg, #56ab2f, #a8e063);
+}
+
+/* Custom radio button styling */
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background: transparent;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked {
+  border-color: #a8e063;
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+}
+
+input[type="radio"]:checked::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:hover {
+  border-color: #a8e063;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-wrapper {
+    width: 90%;
+    padding: 50px 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+    padding-bottom: 50px;
+  }
+
+  .radio-wrapper {
+    gap: 20px;
+  }
+}
+
+/* Success message styles */
+.success-message {
+  text-align: center;
+  color: white;
+}
+
+.success-message h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.success-message p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.submitted-data {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.submitted-data h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.submitted-data p {
+  margin-bottom: 8px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.return-message {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 20px;
+}
