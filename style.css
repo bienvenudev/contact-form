@@ -75,7 +75,7 @@ body {
 }
 
 .bg-img {
-  background: url("bg-01.jpg");
+  background: url("./images/bg-01.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -107,6 +107,11 @@ h1 {
   padding-bottom: 38px;
 }
 
+.radio-wrapper input[type="radio"],
+.radio-wrapper label {
+  cursor: pointer;
+}
+
 .form-input-wrapper.show-quote {
   display: block;
   opacity: 0;
@@ -120,6 +125,11 @@ h1 {
   opacity: 1;
   max-height: 100px;
   margin-bottom: 27px;
+}
+
+.form-input-wrapper input::placeholder {
+  color: #ffffff;
+  opacity: .55;
 }
 
 .form-wrapper {
